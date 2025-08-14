@@ -1,0 +1,144 @@
+﻿# Test Cases for Button Verification on Docusaurus.io Website
+
+1. **Check Activity of Docusaurus 3.8 is out Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Docusaurus 3.8 is out button is available for clicking.
+
+2. **Check Activity of Docusaurus Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Docusaurus button is available for clicking.
+
+3. **Check Activity of Docs Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Docs button is available for clicking.
+
+4. **Check Activity of API Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the API button is available for clicking.
+
+5. **Check Activity of Blog Up Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Blog button is available for clicking.
+
+6. **Check Activity of Showcase Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Showcase button is available for clicking.
+
+7. **Check Activity of Community Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Community button is available for clicking.
+
+8. **Check Activity of Get Started Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Get Started button is available for clicking.
+
+9. **Check Activity of Try a Demo Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Try a Demo button is available for clicking.
+
+10. **Check Activity of Star Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Star button is available for clicking.
+
+11. **Check Activity of Introduction Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Introduction button is available for clicking.
+
+12. **Check Activity of Installation Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Installation button is available for clicking.
+
+13. **Check Activity of Migration from v1 to v2 Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Migration from v1 to v2 button is available for clicking.
+
+14. **Check Activity of Stack Overflow Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Stack Overflow button is available for clicking.
+
+15. **Check Activity of Feature Requests Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Feature Requests button is available for clicking.
+
+16. **Check Activity of Discord Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Discord button is available for clicking.
+
+17. **Check Activity of Help Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Help button is available for clicking.
+
+18. **Check Activity of Blog down Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Blog button is available for clicking.
+
+19. **Check Activity of Changelog Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Changelog button is available for clicking.
+
+20. **Check Activity of GitHub Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the GitHub button is available for clicking.
+
+21. **Check Activity of X Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the X button is available for clicking.
+
+22. **Check Activity of netlify Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the netlify button is available for clicking.
+
+23. **Check Activity of argos-ci Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the argos-ci button is available for clicking.
+
+24. **Check Activity of Privacy Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Privacy button is available for clicking.
+
+25. **Check Activity of Terms Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Terms button is available for clicking.
+
+26. **Check Activity of Cookie Policy Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Cookie Policy button is available for clicking.
+
+27. **Check Activity of Meta Open Source Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Meta Open Source button is available for clicking.
+
+28. **Check Opening of Meta Open Source Page**
+   1) Navigate to the page https://docusaurus.io/
+   2) Click on the Meta Open Source button.
+   3) Ensure that the website opens the section https://opensource.fb.com/
+
+29. **Check Opening of netlify Page**
+   1) Navigate to the page https://docusaurus.io/
+   2) Click on the netlify button.
+   3) Ensure that the website opens the section https://www.netlify.com/
+
+30. **Check Opening of argos-ci Page**
+   1) Navigate to the page https://docusaurus.io/
+   2) Click on the argos-ci button.
+   3) Ensure that the website opens the section https://argos-ci.com/
+
+31. **Check Activity of 3.8.1 Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the 3.8.1 button is available for clicking.
+
+32. **Check Activity of English Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the English button is available for clicking.
+
+33. **Check Activity of GitHub repository Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the GitHub repository button is available for clicking.
+
+34. **Check Activity of system mode Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the system mode button is available for clicking.
+
+35. **Check Activity of Search Button**
+   1) Navigate to the page https://docusaurus.io/
+   2) Ensure that the Search button is available for clicking.

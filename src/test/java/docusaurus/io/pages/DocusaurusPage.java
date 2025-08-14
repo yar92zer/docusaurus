@@ -18,7 +18,7 @@ public class DocusaurusPage {
   WebDriver driver;
   private final int WAIT_TIMEOUT = 10;
 
-  @FindBy(xpath = "//a[contains(text(),'Docusaurus 3.8 is out!\uFE0F')]")
+  @FindBy(xpath = "//a[contains(@href,'/blog/releases/3.8')]")
   public WebElement docusaurus3IsOutButton;
 
   @FindBy(xpath = "//b[@class='navbar__title text--truncate']")
@@ -115,142 +115,142 @@ public class DocusaurusPage {
   public WebElement searchButton;
 
   public boolean getDocusaurus3IsOut() {
-    LOG.info("Проверка доступности кнопки 'Docusaurus 3.8 is out'");
+    LOG.info("Checking availability of 'Docusaurus 3.8 is out' button");
     return docusaurus3IsOutButton.isEnabled();
   }
 
   public boolean getDocusaurus() {
-    LOG.info("Проверка доступности кнопки 'Docusaurus'");
+    LOG.info("Checking availability of 'Docusaurus' button");
     return docusaurusButton.isEnabled();
   }
 
   public boolean getDocs() {
-    LOG.info("Проверка доступности кнопки 'docs'");
+    LOG.info("Checking availability of 'docs' button");
     return docsButton.isEnabled();
   }
 
   public boolean getAPI() {
-    LOG.info("Проверка доступности кнопки 'API'");
+    LOG.info("Checking availability of 'API' button");
     return apiButton.isEnabled();
   }
 
   public boolean getBlogUp() {
-    LOG.info("Проверка доступности кнопки 'blogUp'");
+    LOG.info("Checking availability of 'blogUp' button");
     return blogUpButton.isEnabled();
   }
 
   public boolean getShowcase() {
-    LOG.info("Проверка доступности кнопки'Showcase'");
+    LOG.info("Checking availability of 'Showcase' button");
     return showcaseButton.isEnabled();
   }
 
   public boolean getCommunity() {
-    LOG.info("Проверка доступности кнопки 'Community'");
+    LOG.info("Checking availability of 'Community' button");
     return communityButton.isEnabled();
   }
 
   public boolean getStart() {
-    LOG.info("Проверка доступности кнопки 'start'");
+    LOG.info("Checking availability of 'start' button");
     return startButton.isEnabled();
   }
 
   public boolean getTryDemo() {
-    LOG.info("Проверка доступности кнопки'tryDemo'");
+    LOG.info("Checking availability of 'tryDemo' button");
     return tryDemoButton.isEnabled();
   }
 
   public boolean getIntroduction() {
-    LOG.info("Проверка доступности кнопки 'Introduction'");
+    LOG.info("Checking availability of 'Introduction' button");
     return introductionButton.isEnabled();
   }
 
   public boolean getStarted() {
-    LOG.info("Проверка доступности кнопки 'started'");
+    LOG.info("Checking availability of 'started' button");
     return startedButton.isEnabled();
   }
 
   public boolean getInstallation() {
-    LOG.info("Проверка доступности кнопки 'installation'");
+    LOG.info("Checking availability of 'installation' button");
     return installationButton.isEnabled();
   }
 
   public boolean getMigrationFromV1ToV2() {
-    LOG.info("Проверка доступности кнопки 'migrationFromV1ToV2'");
+    LOG.info("Checking availability of 'migrationFromV1ToV2' button");
     return migrationFromV1ToV2.isEnabled();
   }
 
   public boolean getStackOverflow() {
-    LOG.info("Проверка доступности кнопки 'stackOverflow'");
+    LOG.info("Checking availability of 'stackOverflow' button");
     return stackOverflowButton.isEnabled();
   }
 
   public boolean getFeatureRequests() {
-    LOG.info("Проверка доступности кнопки 'featureRequests'");
+    LOG.info("Checking availability of 'featureRequests' button");
     return featureRequestsButton.isEnabled();
   }
 
   public boolean getDiscord() {
-    LOG.info("Проверка доступности кнопки 'discord'");
+    LOG.info("Checking availability of 'discord' button");
     return discordButton.isEnabled();
   }
 
   public boolean getHelp() {
-    LOG.info("Проверка доступности кнопки  'help'");
+    LOG.info("Checking availability of 'help' button");
     return helpButton.isEnabled();
   }
 
   public boolean getBlog() {
-    LOG.info("Проверка доступности кнопки  'blog'");
+    LOG.info("Checking availability of 'blog' button");
     return blogButton.isEnabled();
   }
 
   public boolean getChangelog() {
-    LOG.info("Проверка доступности кнопки 'changelog'");
+    LOG.info("Checking availability of 'changelog' button");
     return changelogButton.isEnabled();
   }
 
   public boolean getGitHub() {
-    LOG.info("Проверка доступности кнопки  'GitHub'");
+    LOG.info("Checking availability of 'GitHub' button");
     return gitHubButton.isEnabled();
   }
 
   public boolean getX() {
-    LOG.info("Проверка доступности кнопки 'X'");
+    LOG.info("Checking availability of 'X' button");
     return xButton.isEnabled();
   }
 
   public boolean getNetlify() {
-    LOG.info("Проверка доступности кнопки 'Netlify'");
+    LOG.info("Checking availability of 'Netlify' button");
     return netlifyButton.isDisplayed() && netlifyButton.isEnabled();
   }
 
   public boolean getCoveredByArgos() {
-    LOG.info("Проверка доступности кнопки 'coveredByArgos'");
+    LOG.info("Checking availability of 'coveredByArgos' button");
     return coveredByArgosButton.isEnabled();
   }
 
   public boolean getPrivacy() {
-    LOG.info("Проверка доступности кнопки 'privacy'");
+    LOG.info("Checking availability of 'privacy' button");
     return privacyButton.isEnabled();
   }
 
   public boolean getTerms() {
-    LOG.info("Проверка доступности кнопки 'Terms'");
+    LOG.info("Checking availability of 'Terms' button");
     return termsButton.isEnabled();
   }
 
   public boolean getCookiePolicy() {
-    LOG.info("Проверка доступности кнопки  'CookiePolicy'");
+    LOG.info("Checking availability of 'CookiePolicy' button");
     return cookiePolicyButton.isEnabled();
   }
 
   public boolean getMetaOpenSource() {
-    LOG.info("Проверка доступности кнопки  'MetaOpenSourceLogo'");
+    LOG.info("Checking availability of 'MetaOpenSourceLogo' button");
     return metaOpenSourceLogoButton.isEnabled();
   }
 
   public String metaOpenSourceTransition() {
-    LOG.info("Переход на страницу 'MetaOpenSourceLogo'");
+    LOG.info("Navigating to 'MetaOpenSourceLogo' page");
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     wait.until(ExpectedConditions.elementToBeClickable(metaOpenSourceLogoButton));
     metaOpenSourceLogoButton.click();
@@ -259,7 +259,7 @@ public class DocusaurusPage {
   }
 
   public String netlifyTransition() {
-    LOG.info("Переход на страницу 'Netlify'");
+    LOG.info("Navigating to 'Netlify' page");
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     wait.until(ExpectedConditions.elementToBeClickable(netlifyButton));
     String originalWindow = driver.getWindowHandle();
@@ -277,7 +277,7 @@ public class DocusaurusPage {
   }
 
   public String argosTransition() {
-    LOG.info("Переход на страницу 'coveredByArgos'");
+    LOG.info("Navigating to 'coveredByArgos' page");
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     wait.until(ExpectedConditions.elementToBeClickable(coveredByArgosButton));
     String originalWindow = driver.getWindowHandle();
@@ -294,27 +294,27 @@ public class DocusaurusPage {
   }
 
   public boolean getThreeEightOne() {
-    LOG.info("Проверка доступности кнопки 'threeEightOne'");
+    LOG.info("Checking availability of 'threeEightOne' button");
     return threeEightOneButton.isEnabled();
   }
 
   public boolean getEnglish() {
-    LOG.info("Проверка доступности кнопки 'English'");
+    LOG.info("Checking availability of 'English' button");
     return englishButton.isEnabled();
   }
 
   public boolean getGitHubRepository() {
-    LOG.info("Проверка доступности кнопки 'hubRepository'");
+    LOG.info("Checking availability of 'hubRepository' button");
     return gitHubRepository.isEnabled();
   }
 
   public boolean getSystemMode() {
-    LOG.info("Проверка доступности кнопки 'SystemModeMode'");
+    LOG.info("Checking availability of 'SystemMode' button");
     return systemModeButton.isEnabled();
   }
 
   public boolean getSearch() {
-    LOG.info("Проверка доступности кнопки 'search'");
+    LOG.info("Checking availability of 'search' button");
     return searchButton.isEnabled();
   }
 
