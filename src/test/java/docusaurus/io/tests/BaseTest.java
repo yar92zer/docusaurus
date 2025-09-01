@@ -7,13 +7,17 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class BaseTest {
   private static WebDriver driver;
   protected final AllureLoggerCustom LOG;
+  private static final int DEFAULT_TIMEOUT = 15;
 
   @BeforeEach
   public void setUp() {
@@ -29,11 +33,31 @@ public class BaseTest {
   }
 
   public BaseTest() {
-    LOG = new AllureLoggerCustom(LoggerFactory.getLogger(this.getClass()));  // Инициализация экземпляра в конструкторе
+    LOG = new AllureLoggerCustom(LoggerFactory.getLogger(this.getClass()));
   }
 
   @AfterEach
   public void tearDown() {
-    driver.quit();
+    if (driver != null) {
+      driver.quit();
+    }
+  }
+
+  protected String switchToNewWindow(String originalWindow) {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT));
+    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+
+    Set<String> allWindows = driver.getWindowHandles();
+    for (String windowHandle : allWindows) {
+      if (!windowHandle.equals(originalWindow)) {
+        driver.switchTo().window(windowHandle);
+        break;
+      }
+    }
+    return driver.getCurrentUrl();
+  }
+
+  protected String getOriginalWindow() {
+    return driver.getWindowHandle();
   }
 }
