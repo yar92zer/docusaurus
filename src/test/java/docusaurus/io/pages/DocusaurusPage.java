@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
+import static docusaurus.io.Utils.switchToNewWindow;
+
 //https://docusaurus.io/
 public class DocusaurusPage {
   private final AllureLoggerCustom LOG = new AllureLoggerCustom(LoggerFactory.getLogger(DocusaurusPage.class));
@@ -46,6 +48,7 @@ public class DocusaurusPage {
 
   @FindBy(xpath = "//a[text()[normalize-space()='Get Started']]")
   public WebElement startButton;
+  ;
 
   @FindBy(xpath = "//a[normalize-space()='Introduction']")
   public WebElement introductionButton;
@@ -263,7 +266,7 @@ public class DocusaurusPage {
     wait.until(ExpectedConditions.elementToBeClickable(netlifyButton));
     String originalWindow = driver.getWindowHandle();
     netlifyButton.click();
-    return switchToNewWindow(originalWindow, "netlify");
+    return switchToNewWindow(driver, originalWindow, "netlify");
   }
 
   public String argosTransition() {
@@ -272,23 +275,9 @@ public class DocusaurusPage {
     wait.until(ExpectedConditions.elementToBeClickable(coveredByArgosButton));
     String originalWindow = driver.getWindowHandle();
     coveredByArgosButton.click();
-    return switchToNewWindow(originalWindow, "argos");
+    return switchToNewWindow(driver, originalWindow, "argos");
   }
 
-  private String switchToNewWindow(String originalWindow, String expectedUrlPart) {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-
-    for (String windowHandle : driver.getWindowHandles()) {
-      if (!windowHandle.equals(originalWindow)) {
-        driver.switchTo().window(windowHandle);
-        break;
-      }
-    }
-
-    wait.until(ExpectedConditions.urlContains(expectedUrlPart));
-    return driver.getCurrentUrl();
-  }
 
   public boolean getThreeEightOne() {
     LOG.info("Checking availability of 'threeEightOne' button");
