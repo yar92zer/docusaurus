@@ -44,7 +44,7 @@ public class DocusaurusPage {
   @FindBy(xpath = "//a[normalize-space()='Try a Demo']")
   public WebElement tryDemoButton;
 
-  @FindBy(xpath = "//*[@id=\"__docusaurus_skipToContent_fallback\"]/main/div[2]/div/div/a[1]")
+  @FindBy(xpath = "//a[text()[normalize-space()='Get Started']]")
   public WebElement startButton;
 
   @FindBy(xpath = "//a[normalize-space()='Introduction']")
