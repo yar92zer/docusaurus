@@ -1,4 +1,4 @@
-package docusaurus.io;
+package utils;
 
 import docusaurus.io.tests.BaseTest;
 import io.qameta.allure.Attachment;

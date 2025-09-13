@@ -1,6 +1,6 @@
 package docusaurus.io.pages;
 
-import docusaurus.io.AllureLoggerCustom;
+import utils.AllureLoggerCustom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,16 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.LoggerFactory;
+import utils.Utils;
 
 import java.time.Duration;
 
-import static docusaurus.io.Utils.switchToNewWindow;
 
 //https://docusaurus.io/
 public class DocusaurusPage {
   private final AllureLoggerCustom LOG = new AllureLoggerCustom(LoggerFactory.getLogger(DocusaurusPage.class));
   private final WebDriver driver;
   private final int WAIT_TIMEOUT = 10;
+  private final Utils utils;
 
   @FindBy(xpath = "//a[contains(@href,'/blog/releases/3.8')]")
   public WebElement docusaurus3IsOutButton;
@@ -266,7 +267,8 @@ public class DocusaurusPage {
     wait.until(ExpectedConditions.elementToBeClickable(netlifyButton));
     String originalWindow = driver.getWindowHandle();
     netlifyButton.click();
-    return switchToNewWindow(driver, originalWindow, "netlify");
+    utils.switchToNewWindow("netlify");
+    return utils.checkUrlOfNewWindowAndGetUrl(originalWindow,"netlify");
   }
 
   public String argosTransition() {
@@ -275,7 +277,8 @@ public class DocusaurusPage {
     wait.until(ExpectedConditions.elementToBeClickable(coveredByArgosButton));
     String originalWindow = driver.getWindowHandle();
     coveredByArgosButton.click();
-    return switchToNewWindow(driver, originalWindow, "argos");
+    utils.switchToNewWindow("argos");
+    return utils.checkUrlOfNewWindowAndGetUrl(originalWindow, "argos");
   }
 
 
@@ -306,6 +309,7 @@ public class DocusaurusPage {
 
   public DocusaurusPage(WebDriver driver) {
     this.driver = driver;
+    utils=new Utils(driver);
     PageFactory.initElements(driver, this);
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
     wait.until(webDriver -> ((org.openqa.selenium.JavascriptExecutor) webDriver)

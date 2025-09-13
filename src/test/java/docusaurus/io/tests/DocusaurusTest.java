@@ -1,6 +1,6 @@
 package docusaurus.io.tests;
 
-import docusaurus.io.MyExtensions;
+import utils.MyExtensions;
 import docusaurus.io.pages.DocusaurusPage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -24,13 +24,15 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'Docusaurus 3.8 is out' button activity")
   public void docusaurus3IsOutIsActive() {
-    assertTrue(docusaurusPage.getDocusaurus3IsOut(), "Docusaurus 3.8 is out button is not active");
+    assertTrue(docusaurusPage.getDocusaurus3IsOut(),
+      "Docusaurus 3.8 is out button is not active");
   }
 
   @Test
   @DisplayName("Check 'Docusaurus' button activity")
   public void docusaurusIsActive() {
-    assertTrue(docusaurusPage.getDocusaurus(), "Docusaurus button is not active");
+    assertTrue(docusaurusPage.getDocusaurus(),
+      "Docusaurus button is not active");
   }
 
   @Test
@@ -48,19 +50,22 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'blogUp' button activity")
   public void blogUpIsActive() {
-    assertTrue(docusaurusPage.getBlogUp(), "blogUp button is not active");
+    assertTrue(docusaurusPage.getBlogUp(),
+      "blogUp button is not active");
   }
 
   @Test
   @DisplayName("Check 'Showcase' button activity")
   public void showcaseIsActive() {
-    assertTrue(docusaurusPage.getShowcase(), "Showcase button is not active");
+    assertTrue(docusaurusPage.getShowcase(),
+      "Showcase button is not active");
   }
 
   @Test
   @DisplayName("Check 'Community' button activity")
   public void communityIsActive() {
-    assertTrue(docusaurusPage.getCommunity(), "Community button is not active");
+    assertTrue(docusaurusPage.getCommunity(),
+      "Community button is not active");
   }
 
   @Test
@@ -72,49 +77,57 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'tryDemo' button activity")
   public void tryDemoIsActive() {
-    assertTrue(docusaurusPage.getTryDemo(), "tryDemo button is not active");
+    assertTrue(docusaurusPage.getTryDemo(),
+      "tryDemo button is not active");
   }
 
   @Test
   @DisplayName("Check 'Introduction' button activity")
   public void introductionIsActive() {
-    assertTrue(docusaurusPage.getIntroduction(), "Introduction button is not active");
+    assertTrue(docusaurusPage.getIntroduction(),
+      "Introduction button is not active");
   }
 
   @Test
   @DisplayName("Check 'started' button activity")
   public void startedIsActive() {
-    assertTrue(docusaurusPage.getStarted(), "started button is not active");
+    assertTrue(docusaurusPage.getStarted(),
+      "started button is not active");
   }
 
   @Test
   @DisplayName("Check 'installation' button activity")
   public void installationIsActive() {
-    assertTrue(docusaurusPage.getInstallation(), "installation button is not active");
+    assertTrue(docusaurusPage.getInstallation(),
+      "installation button is not active");
   }
 
   @Test
   @DisplayName("Check 'migrationFromV1ToV2' button activity")
   public void migrationFromV1ToV2IsActive() {
-    assertTrue(docusaurusPage.getMigrationFromV1ToV2(), "migrationFromV1ToV2 button is not active");
+    assertTrue(docusaurusPage.getMigrationFromV1ToV2(),
+      "migrationFromV1ToV2 button is not active");
   }
 
   @Test
   @DisplayName("Check 'stackOverflow' button activity")
   public void stackOverflowIsActive() {
-    assertTrue(docusaurusPage.getStackOverflow(), "stackOverflow button is not active");
+    assertTrue(docusaurusPage.getStackOverflow(),
+      "stackOverflow button is not active");
   }
 
   @Test
   @DisplayName("Check 'featureRequests' button activity")
   public void featureRequestsIsActive() {
-    assertTrue(docusaurusPage.getFeatureRequests(), "featureRequests button is not active");
+    assertTrue(docusaurusPage.getFeatureRequests(),
+      "featureRequests button is not active");
   }
 
   @Test
   @DisplayName("Check 'discord' button activity")
   public void discordIsActive() {
-    assertTrue(docusaurusPage.getDiscord(), "discord button is not active");
+    assertTrue(docusaurusPage.getDiscord(),
+      "discord button is not active");
   }
 
   @Test
@@ -132,13 +145,15 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'changelog' button activity")
   public void changelogIsActive() {
-    assertTrue(docusaurusPage.getChangelog(), "changelog button is not active");
+    assertTrue(docusaurusPage.getChangelog(),
+      "changelog button is not active");
   }
 
   @Test
   @DisplayName("Check 'GitHub' button activity")
   public void gitHubIsActive() {
-    assertTrue(docusaurusPage.getGitHub(), "GitHub button is not active");
+    assertTrue(docusaurusPage.getGitHub(),
+      "GitHub button is not active");
   }
 
   @Test
@@ -150,19 +165,22 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'Netlify' button activity")
   public void netlifyIsActive() {
-    assertTrue(docusaurusPage.getNetlify(), "Netlify button is not active");
+    assertTrue(docusaurusPage.getNetlify(),
+      "Netlify button is not active");
   }
 
   @Test
   @DisplayName("Check 'coveredByArgos' button activity")
   public void coveredByArgosIsActive() {
-    assertTrue(docusaurusPage.getCoveredByArgos(), "coveredByArgos button is not active");
+    assertTrue(docusaurusPage.getCoveredByArgos(),
+      "coveredByArgos button is not active");
   }
 
   @Test
   @DisplayName("Check 'privacy' button activity")
   public void privacyIsActive() {
-    assertTrue(docusaurusPage.getPrivacy(), "privacy button is not active");
+    assertTrue(docusaurusPage.getPrivacy(),
+      "privacy button is not active");
   }
 
   @Test
@@ -174,43 +192,50 @@ public class DocusaurusTest extends BaseTest {
   @Test
   @DisplayName("Check 'CookiePolicy' button activity")
   public void cookiePolicyIsActive() {
-    assertTrue(docusaurusPage.getCookiePolicy(), "CookiePolicy button is not active");
+    assertTrue(docusaurusPage.getCookiePolicy(),
+      "CookiePolicy button is not active");
   }
 
   @Test
   @DisplayName("Check 'MetaOpenSourceLogo' button activity")
   public void metaOpenSourceLogoIsActive() {
-    assertTrue(docusaurusPage.getMetaOpenSource(), "MetaOpenSourceLogo button is not active");
+    assertTrue(docusaurusPage.getMetaOpenSource(),
+      "MetaOpenSourceLogo button is not active");
   }
 
   @Test
   @DisplayName("Check 'threeEightOne' button activity")
   public void threeEightOneTest() {
-    assertTrue(docusaurusPage.getThreeEightOne(), "'threeEightOne' button is not active");
+    assertTrue(docusaurusPage.getThreeEightOne(),
+      "'threeEightOne' button is not active");
   }
 
   @Test
   @DisplayName("Check 'English' button activity")
   public void englishTest() {
-    assertTrue(docusaurusPage.getEnglish(), "'English' button is not active");
+    assertTrue(docusaurusPage.getEnglish(),
+      "'English' button is not active");
   }
 
   @Test
   @DisplayName("Check 'hubRepository' button activity")
   public void hubRepositoryTest() {
-    assertTrue(docusaurusPage.getGitHubRepository(), "'hubRepository' button is not active");
+    assertTrue(docusaurusPage.getGitHubRepository(),
+      "'hubRepository' button is not active");
   }
 
   @Test
   @DisplayName("Check 'SystemMode' button activity")
   public void systemModeTest() {
-    assertTrue(docusaurusPage.getSystemMode(), "'SystemMode' button is not active");
+    assertTrue(docusaurusPage.getSystemMode(),
+      "'SystemMode' button is not active");
   }
 
   @Test
   @DisplayName("Check 'search' button activity")
   public void searchTest() {
-    assertTrue(docusaurusPage.getSearch(), "'search' button is not active");
+    assertTrue(docusaurusPage.getSearch(),
+      "'search' button is not active");
   }
 
   @Test
@@ -219,7 +244,8 @@ public class DocusaurusTest extends BaseTest {
     String expectedUrl = "https://opensource.fb.com/";
     String actualUrl = docusaurusPage.metaOpenSourceTransition();
     assertTrue(actualUrl.startsWith(expectedUrl),
-      "Actual URL '" + actualUrl + "' does not start with expected URL '" + expectedUrl + "'");
+      "Actual URL '" + actualUrl +
+        "' does not start with expected URL " + "'" + expectedUrl + "'");
   }
 
   @Test
@@ -228,13 +254,13 @@ public class DocusaurusTest extends BaseTest {
     String expectedUrl = "https://www.netlify.com/";
     String actualUrl = docusaurusPage.netlifyTransition();
     assertTrue(actualUrl.startsWith(expectedUrl),
-      "Actual URL '" + actualUrl + "' does not start with expected URL '" + expectedUrl + "'");
+      "Actual URL '" + actualUrl +
+        "' does not start with expected URL '" + expectedUrl + "'");
   }
 
   @Test
   @DisplayName("Check navigation to 'coveredByArgos' page")
   public void coveredByArgosTest() {
-    String expectedUrl = "https://argos-ci.com/";
     String actualUrl = docusaurusPage.argosTransition();
     assertTrue(actualUrl.contains("argos"),
       "Actual URL '" + actualUrl + "' does not contain 'argos'");
