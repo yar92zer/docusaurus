@@ -1,4 +1,4 @@
-package utils;
+package docusaurus.io.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;

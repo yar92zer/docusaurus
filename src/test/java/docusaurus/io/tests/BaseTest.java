@@ -1,6 +1,6 @@
 package docusaurus.io.tests;
 
-import utils.AllureLoggerCustom;
+import docusaurus.io.utils.AllureLoggerCustom;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.PageLoadStrategy;

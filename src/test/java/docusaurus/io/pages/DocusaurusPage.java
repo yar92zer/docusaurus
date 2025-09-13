@@ -1,6 +1,6 @@
 package docusaurus.io.pages;
 
-import utils.AllureLoggerCustom;
+import docusaurus.io.utils.AllureLoggerCustom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.LoggerFactory;
-import utils.Utils;
+import docusaurus.io.utils.Utils;
 
 import java.time.Duration;
 

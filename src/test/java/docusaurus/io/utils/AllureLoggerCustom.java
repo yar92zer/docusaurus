@@ -1,4 +1,4 @@
-package utils;
+package docusaurus.io.utils;
 
 import io.qameta.allure.Step;
 import org.slf4j.Logger;

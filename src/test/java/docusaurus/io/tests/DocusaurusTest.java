@@ -1,6 +1,6 @@
 package docusaurus.io.tests;
 
-import utils.MyExtensions;
+import docusaurus.io.utils.MyExtensions;
 import docusaurus.io.pages.DocusaurusPage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

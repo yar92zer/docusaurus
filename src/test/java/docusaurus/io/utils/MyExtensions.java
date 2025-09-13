@@ -1,4 +1,4 @@
-package utils;
+package docusaurus.io.utils;
 
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
