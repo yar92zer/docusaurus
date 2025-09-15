@@ -1,6 +1,7 @@
 package docusaurus.io.pages;
 
 import docusaurus.io.utils.AllureLoggerCustom;
+import docusaurus.io.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.LoggerFactory;
-import docusaurus.io.utils.Utils;
 
 import java.time.Duration;
 
@@ -116,6 +116,15 @@ public class DocusaurusPage {
 
   @FindBy(xpath = "//button[@aria-label='Search (Ctrl+K)']")
   public WebElement searchButton;
+
+  public DocusaurusPage(WebDriver driver) {
+    this.driver = driver;
+    utils = new Utils(driver);
+    PageFactory.initElements(driver, this);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
+    wait.until(webDriver -> ((org.openqa.selenium.JavascriptExecutor) webDriver)
+      .executeScript("return document.readyState").equals("complete"));
+  }
 
   public boolean getDocusaurus3IsOut() {
     LOG.info("Checking availability of 'Docusaurus 3.8 is out' button");
@@ -268,7 +277,7 @@ public class DocusaurusPage {
     String originalWindow = driver.getWindowHandle();
     netlifyButton.click();
     utils.switchToNewWindow("netlify");
-    return utils.checkUrlOfNewWindowAndGetUrl(originalWindow,"netlify");
+    return utils.checkUrlOfNewWindowAndGetUrl(originalWindow, "netlify");
   }
 
   public String argosTransition() {
@@ -307,12 +316,4 @@ public class DocusaurusPage {
     return searchButton.isEnabled();
   }
 
-  public DocusaurusPage(WebDriver driver) {
-    this.driver = driver;
-    utils=new Utils(driver);
-    PageFactory.initElements(driver, this);
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
-    wait.until(webDriver -> ((org.openqa.selenium.JavascriptExecutor) webDriver)
-      .executeScript("return document.readyState").equals("complete"));
-  }
 }

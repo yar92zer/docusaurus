@@ -18,7 +18,6 @@ public class Utils {
   }
 
   public void switchToNewWindow(String originalWindow) {
-    wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT));
     wait.until(ExpectedConditions.numberOfWindowsToBe(2));
     Set<String> allWindows = driver.getWindowHandles();
     for (String windowHandle : allWindows) {
